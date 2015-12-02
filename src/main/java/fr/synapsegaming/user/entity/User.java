@@ -94,9 +94,9 @@ public class User {
     /**
      * The list of articles of a User
      */
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_user")
-    private Set<Article> articles;
+    private List<Article> articles;
 
     /**
      * The nickname of the main char of the User
@@ -248,11 +248,11 @@ public class User {
         this.password = password;
     }
 
-    public Set<Article> getArticles() {
+    public List<Article> getArticles() {
         return articles;
     }
 
-    public void setArticles(Set<Article> articles) {
+    public void setArticles(List<Article> articles) {
         this.articles = articles;
     }
 
