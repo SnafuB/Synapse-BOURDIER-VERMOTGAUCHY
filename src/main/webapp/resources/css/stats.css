@@ -1,0 +1,26 @@
+.MostPlayedClasses,mostPlayedRaces
+{
+	margin: auto;
+}
+
+.stats
+{
+	margin: auto;
+}
+
+.table-stats tr
+{
+	border: 1px solid lightgrey;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    border: 1px solid lightgrey;
+    text-align: center;
+}
+
+th, tr, td{
+    height: 50px;
+    border: 1px solid lightgrey;
+} 
